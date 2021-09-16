@@ -15,7 +15,7 @@ const noOfNotes = document.querySelectorAll(".noOfNotes");
 const notesAvailable = [2000, 500, 100, 20, 10, 5, 1];
 
 btnNext.addEventListener("click", () => {
-  clearError();
+ error("");//to clear error occured previously
   const bill = billAmount.value;
   if (bill > 0) {
     btnNext.classList.add("hidden");
@@ -26,7 +26,7 @@ btnNext.addEventListener("click", () => {
 });
 
 btnCheck.addEventListener("click", () => {
-  clearError();
+ error("");
   const cashValue = cashGiven.value;
   const billValue = billAmount.value;
   if (billValue > 0 && cashValue > 0) {
@@ -57,6 +57,3 @@ function error(message) {
   errorMessage.textContent = message;
 }
 
-function clearError() {
-  errorMessage.textContent = "";
-}
