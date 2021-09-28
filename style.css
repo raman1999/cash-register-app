@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Zen+Tokyo+Zoo&display=swap");
 :root {
   --primary-background: rgb(84, 67, 107);
-  --secondary-background: rgb(113, 239, 163);
+  
   --primary-color: rgb(84, 67, 107);
   --secondary-color: rgb(80, 203, 147);
 }
@@ -15,9 +15,9 @@ body {
   color: black;
   font-family: "Roboto Mono", monospace;
   background-image: url(money.png);
-  background-size: contain;
+  background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    
 }
 .container {
   display: grid;
@@ -29,15 +29,15 @@ body {
   text-align: center;
 }
 .card {
+  
   width: 100%;
   background-color:rgba(220,220,220,0.5);
   border-radius: 1rem;
   padding: 1rem;
- 
+  
 }
 .card-header {
-  display: grid;
-  place-items: center;
+  
   padding: 1rem 0;
   border-bottom: 1px dotted var(--primary-background);
   
@@ -48,7 +48,7 @@ body {
 .card-header p {
   width: 80%;
   padding: 0.5rem 0;
-
+margin:auto;
   font-weight:550;
 }
 .card-body {
@@ -101,6 +101,7 @@ label {
 }
 .card-footer {
   padding: 0.75rem 0;
+  font-weight:bold;
 }
 
 #output table {

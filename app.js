@@ -31,10 +31,16 @@ btnCheck.addEventListener("click", () => {
   const billValue = billAmount.value;
   if (billValue > 0 && cashValue > 0) {
     let returnAmount = cashValue - billValue;
-    if (returnAmount < 1) {
+    if (returnAmount ==0) {
       error("No amount should be returned.");
       output.classList.add("hidden");
-    } else {
+    } else if(returnAmount<0)
+    {
+      error("Cash given is less than bill value");
+      output.classList.add("hidden");
+    }
+    
+    else {
       output.classList.remove("hidden");
       returnAmountDisplay.textContent = returnAmount;
       calculateChange(cashValue, billValue);
@@ -56,4 +62,6 @@ function calculateChange(cash, bill) {
 function error(message) {
   errorMessage.textContent = message;
 }
+
+
 
