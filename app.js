@@ -1,5 +1,5 @@
 const billAmount = document.querySelector("#billAmount");
-const cashGiven = document.querySelector("#cashGiven");
+const cashGiven = document.querySelector("#cashGivenu");
 
 const cashGivenGroup = document.querySelector("#cashGivenGroup");
 
